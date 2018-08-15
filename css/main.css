@@ -1,0 +1,329 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#logo
+{
+    position: absolute;
+    z-index: 99;
+    width: 36%;
+    margin-left: 30%;
+    margin-top: 100px;
+    filter: brightness(150%)
+}
+#mars
+{
+    position: absolute;
+    z-index: 99;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 530px;
+    animation: mars 180s infinite linear;
+}
+#midwall
+{
+    position: fixed;
+    z-index: -1;
+}
+.planet
+{
+    position: absolute;
+    top: 105%;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.red
+{
+    position: absolute;
+    top: 82%;
+    font-size: 130px;
+    font-weight: bolder;
+    color: #b20000;
+    opacity: 0.8;
+    z-index: 999;
+    animation: redflash 3.5s infinite linear;
+}
+#preload
+{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    transition: all 1s;
+}
+#preload img
+{
+    width: 40%
+    /* margin-left: 25%: */
+}
+@keyframes redflash{
+    0%  {opacity: 0.9;}
+    50% {opacity: 0.4;}
+    100% {opacity: 0.9;}
+}
+@keyframes mars {
+    0%  {transform: rotate(0deg)}
+    100% {transform: rotate(359deg)}
+}
+@keyframes bigstars {
+    0%  {transform: translateY(0px) translateX(0px)}
+    25% {transform: translateY(10px) translateX(10px)}
+    50% {transform: translateY(0px) translateX(10px);opacity: 0}
+    75% {transform: translateY(10px) translateX(0px)}
+    100% {transform: translateY(0px) translateX(0px)}
+}
+@keyframes medstars {
+    0%  {transform: translateY(0px) translateX(0px)}
+    25% {transform: translateY(0px) translateX(15px)}
+    50% {transform: translateY(20px) translateX(15px)}
+    75% {transform: translateY(20px) translateX(0px)}
+    80% {opacity: 0}
+    100% {transform: translateY(0px) translateX(0px)}
+}
+@keyframes smastars {
+    0%  {transform: translateY(0px) translateX(0px)}
+    15% {opacity: 0}
+    50% {transform: translateY(10px) translateX(15px)}
+    70% {transform: translateY(15px) translateX(0px)}
+    100% {transform: translateY(0px) translateX(0px)}
+}
+.med{
+    opacity: 0.9;
+    animation: medstars 10s infinite linear ;
+}
+.sma{
+    opacity: 0.9;                                
+    animation: smastars 10s infinite linear ;
+}
+.big{
+    opacity: 0.9;
+    animation: bigstars 10s infinite linear ;
+}
+svg
+{
+    /* transform: scaleY(1.2) scaleX(1.4); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+#div1
+{
+    position: absolute;
+    top: 150%;
+    width: 100%;
+    height: 450px;
+    background: #fff;
+    text-align: center
+}
+#div1 p
+{
+    font-size: 19px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 12%; 
+}
+#div2
+{
+    width: 100%;
+    position: absolute;
+    top: 215%;
+    width: 100%;
+    height: 150px;
+    background: #282828;
+    text-align: center;
+}
+#div2 p
+{
+    margin-top: 50px;
+    font-size: 36px; 
+    color: #fff;
+}
+.menuc
+{
+    position: absolute;
+    z-index: 999999;
+    width: 12%;
+    height: 24%;
+    border-radius: 200px;
+    background: #fff;
+    opacity: 0.6;
+    overflow: hidden;
+    transition: all 0.3s; 
+}
+.menuc img
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.menuc p
+{
+    text-align: center;
+    margin-top: -100px;
+    color: #282828;
+}
+.menuc:hover
+{
+    opacity: 0.9;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px -8px #fff;
+}
+.menuc:hover img
+{
+    opacity: 0.9;
+}
+.menuc:hover p
+{
+    display: none;
+}
+#div3
+{
+    width: 100%;
+    position: absolute;
+    top: 237.5%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+#div3 img
+{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    filter: brightness(40%);
+    /* filter: blur(2px);
+    filter: scale(1.1); */
+    width: 100%;
+    height: 100%; 
+}
+#div3 p
+{
+    color: #fff;
+}
+#up
+{
+    margin-top: 4%;
+    font-size: 28px;
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 9;
+}
+#div3 ul{
+    position: absolute;
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 15%;
+}
+#div3 li{
+    list-style: none;
+    color: #999;
+    font-size: 24px;
+    padding-top: 12%;
+    cursor: pointer;
+}
+.divs
+{
+    position: absolute;
+    width: 50%;
+    margin-left: 40%; 
+    margin-top: 15%; 
+    opacity: 0;
+    color: #fff;
+}
+/* .divs p,h1
+{
+    color: #fff;
+} */
+#caro
+{
+    position: absolute;
+    width: 100%;
+    top: 337.5%;
+    height: 150px;
+    background: #fff;
+}
+.foot
+{
+    position: absolute;
+    top: 360%;
+    height:280px;
+    width: 100%;
+    /* background: url(../); */
+    /* background-size: 100% 100%; */
+    color: #fff;
+    font-size: 15px;
+}
+.foot img
+{
+    position: absolute;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+}
+.foot i
+{
+    color: #ccc;
+}
+.footer
+{
+    position: absolute;
+    top: 402%;
+    text-align: center;
+    background: #4f4e4e;
+    width: 100%;
+    height: 50px;
+}
+.footer p
+{
+    margin-top: 12px;
+    float: left;
+    color: #fff
+}
+.icon
+{
+    margin-top: 10px; 
+    float: right;
+    font-size: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: #ccc;
+}
+.icon:hover
+{
+    color:#fff;
+}
+.foot h2
+{
+    color: #ccc;
+}
+.fcontainer
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+.fdiv
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 50%;
+    float: left;
+}
+.fdiv2
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 30%;
+    float: left;
+}
