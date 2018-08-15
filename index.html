@@ -1,0 +1,388 @@
+    <html>
+    <head>
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
+        <script src="js/js.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            jssor_1_slider_init = function() {
+
+                var jssor_1_options = {
+                $AutoPlay: 1,
+                $AutoPlaySteps: 5,
+                $SlideDuration: 160,
+                $SlideWidth: 200,
+                $SlideSpacing: 3,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $Steps: 5
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 980;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+    <style>
+        /*slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*slider bullet skin 057 css*/
+        .jssorb057 .i {position:absolute;cursor:pointer;}
+        .jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+        .jssorb057 .i:hover .b {stroke-opacity:.7;}
+        .jssorb057 .iav .b {stroke-opacity: 1;}
+        .jssorb057 .i.idn {opacity:.3;}
+
+        /*slider arrow skin 073 css*/
+        .jssora073 {display:block;position:absolute;cursor:pointer;}
+        .jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+        .jssora073:hover {opacity:.8;}
+        .jssora073.jssora073dn {opacity:.4;}
+        .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+    </style>
+    </head>
+    <body onload="myFunction()">
+        <div id="preload">
+            <br>
+            <br>
+            <br>
+            <img src="images/rl.gif" />
+            <h1>LOADING...</h1>
+        </div>
+        <div id="main">
+            <img id="midwall" src="images/mars1.jpg" />
+            <img id="logo" src="images/Logo3.png" />
+
+            <div class="menuc" style="left:7%;top:65%;">
+                <img src="images/marsm.gif" />
+                <p><span style="font-size:26px">M</span>ARS</p>
+            </div>
+            
+            <div class="menuc" style="left:23%;top:39%;">
+                <img src="images/rock.gif" />
+                <p><span style="font-size:26px">J</span>OURNEY</p>
+            </div>
+        
+            <div class="menuc" style="left:63%;top:39%;">
+                <img src="images/award.gif" />
+                <p><span style="font-size:26px">A</span>CHIEVEMENTS</p>
+            </div>
+
+            <div class="menuc" style="left:80%;top:65%;">
+                <img src="images/services.gif" />
+                <p><span style="font-size:26px">S</span>ERVICES</p>
+            </div>
+            <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern height="100" id="gridpattern" patternUnits="userSpaceOnUse" width="100" x="0" y="0">
+                <image height="100" id="svg_1" width="100" x="0" y="0"/>
+                </pattern>
+                <pattern height="100" id="gridpattern" patternUnits="userSpaceOnUse" width="100" x="0" y="0">
+                <image height="100" id="svg_4" width="100" x="0" y="0"/>
+                </pattern>
+            </defs>
+            <g class="layer">
+                <title>Layer 1</title>
+                <rect fill="#0a0000" height="680" id="svg_2" stroke="#230000" stroke-width="0" width="1400.0001" x="-0.5" y="-1.5"/>
+                <circle class="big" cx="66" cy="62" fill="#fcf4f4" id="svg_3" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="189.25" cy="103.25" fill="#fcf4f4" id="svg_5" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="649.25" cy="327.25" fill="#fcf4f4" id="svg_6" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="450.25" cy="354.25" fill="#fcf4f4" id="svg_7" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="894.25" cy="406.25" fill="#fcf4f4" id="svg_8" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="477.25" cy="125.25" fill="#fcf4f4" id="svg_9" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="333.25" cy="514.25" fill="#fcf4f4" id="svg_10" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="147.25" cy="448.25" fill="#fcf4f4" id="svg_11" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="131.25" cy="284.25" fill="#fcf4f4" id="svg_12" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="1044.25" cy="130.25" fill="#fcf4f4" id="svg_13" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="791.25" cy="410.25" fill="#fcf4f4" id="svg_14" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="780.25" cy="194.25" fill="#fcf4f4" id="svg_15" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="638.25" cy="207.25" fill="#fcf4f4" id="svg_16" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="605.25" cy="479.25" fill="#fcf4f4" id="svg_17" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="324.25" cy="222.25" fill="#fcf4f4" id="svg_18" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="1080.25" cy="332.25" fill="#fcf4f4" id="svg_19" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="1190.25" cy="191.25" fill="#fcf4f4" id="svg_20" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="1017.25" cy="481.25" fill="#fcf4f4" id="svg_21" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="467.25" cy="448.25" fill="#fcf4f4" id="svg_22" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="862.25" cy="601.25" fill="#fcf4f4" id="svg_23" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="1001.25" cy="64.25" fill="#fcf4f4" id="svg_24" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="909.25" cy="318.25" fill="#fcf4f4" id="svg_25" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="496.25" cy="572.25" fill="#fcf4f4" id="svg_26" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="281.25" cy="369.25" fill="#fcf4f4" id="svg_27" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="723.25" cy="73.25" fill="#fcf4f4" id="svg_28" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="732.25" cy="557.25" fill="#fcf4f4" id="svg_29" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="309.25" cy="290.25" fill="#fcf4f4" id="svg_30" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="488.25" cy="280.25" fill="#fcf4f4" id="svg_31" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="529.25" cy="343.25" fill="#fcf4f4" id="svg_32" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="700.25" cy="271.25" fill="#fcf4f4" id="svg_33" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="419.25" cy="217.25" fill="#fcf4f4" id="svg_34" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="308.25" cy="62.25" fill="#fcf4f4" id="svg_35" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="567.25" cy="111.25" fill="#fcf4f4" id="svg_36" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="106.25" cy="576.25" fill="#fcf4f4" id="svg_37" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="289.25" cy="538.25" fill="#fcf4f4" id="svg_38" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="660.25" cy="542.25" fill="#fcf4f4" id="svg_39" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="703.25" cy="414.25" fill="#fcf4f4" id="svg_40" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="842.25" cy="245.25" fill="#fcf4f4" id="svg_41" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="907.25" cy="134.25" fill="#fcf4f4" id="svg_42" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1053.25" cy="215.25" fill="#fcf4f4" id="svg_43" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="990.25" cy="383.25" fill="#fcf4f4" id="svg_44" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="114.25" cy="191.25" fill="#fcf4f4" id="svg_45" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="920.25" cy="514.25" fill="#fcf4f4" id="svg_46" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1075.25" cy="561.25" fill="#fcf4f4" id="svg_47" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1172.25" cy="425.25" fill="#fcf4f4" id="svg_48" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1125.25" cy="71.25" fill="#fcf4f4" id="svg_49" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="515.25" cy="57.25" fill="#fcf4f4" id="svg_50" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="708.25" cy="193.25" fill="#fcf4f4" id="svg_51" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="518.25" cy="550.25" fill="#fcf4f4" id="svg_52" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="172.25" cy="340.25" fill="#fcf4f4" id="svg_53" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="412.25" cy="479.25" fill="#fcf4f4" id="svg_54" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="850.25" cy="59.25" fill="#fcf4f4" id="svg_55" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="756.25" cy="316.25" fill="#fcf4f4" id="svg_56" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="817.25" cy="503.25" fill="#fcf4f4" id="svg_57" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="470.25" cy="321.25" fill="#fcf4f4" id="svg_58" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="815.25" cy="361.25" fill="#fcf4f4" id="svg_59" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="534.25" cy="473.25" fill="#fcf4f4" id="svg_60" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="297.25" cy="414.25" fill="#fcf4f4" id="svg_61" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="392.25" cy="100.25" fill="#fcf4f4" id="svg_62" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="788.25" cy="152.25" fill="#fcf4f4" id="svg_63" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="760.25" cy="502.25" fill="#fcf4f4" id="svg_64" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="574.25" cy="248.25" fill="#fcf4f4" id="svg_65" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="974.25" cy="242.25" fill="#fcf4f4" id="svg_66" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="234.25" cy="198.25" fill="#fcf4f4" id="svg_67" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="645.25" cy="133.25" fill="#fcf4f4" id="svg_68" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="184.25" cy="535.25" fill="#fcf4f4" id="svg_69" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="73.25" cy="371.25" fill="#fcf4f4" id="svg_70" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1098.25" cy="275.25" fill="#fcf4f4" id="svg_71" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="506.25" cy="173.25" fill="#fcf4f4" id="svg_72" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="393.25" cy="578.25" fill="#fcf4f4" id="svg_73" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="980.25" cy="605.25" fill="#fcf4f4" id="svg_74" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="976.25" cy="438.25" fill="#fcf4f4" id="svg_75" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="673.25" cy="73.25" fill="#fcf4f4" id="svg_76" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1048.25" cy="295.25" fill="#fcf4f4" id="svg_77" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1126.25" cy="504.25" fill="#fcf4f4" id="svg_78" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="353.25" cy="336.25" fill="#fcf4f4" id="svg_79" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="306.25" cy="133.25" fill="#fcf4f4" id="svg_80" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="529.25" cy="397.25" fill="#fcf4f4" id="svg_81" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="855.25" cy="151.25" fill="#fcf4f4" id="svg_82" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="372.25" cy="465.25" fill="#fcf4f4" id="svg_83" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="664.25" cy="404.25" fill="#fcf4f4" id="svg_84" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1247.25" cy="588.25" fill="#fcf4f4" id="svg_85" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1160.25" cy="286.25" fill="#fcf4f4" id="svg_86" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1250.25" cy="443.25" fill="#fcf4f4" id="svg_87" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="med" cx="1271.25" cy="58.25" fill="#fcf4f4" id="svg_88" r="1.5" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1176.25" cy="79.25" fill="#fcf4f4" id="svg_89" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1249.25" cy="304.25" fill="#fcf4f4" id="svg_90" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1229.25" cy="125.25" fill="#fcf4f4" id="svg_91" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="sma" cx="1241.25" cy="529.25" fill="#fcf4f4" id="svg_92" r="1.2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+                <circle class="big" cx="1225.25" cy="371.25" fill="#fcf4f4" id="svg_93" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
+            </g>
+            </svg>
+            <p class="planet" style="left:16%;"><span style="font-size:106px;">T</span>HE</p>
+            <p class="red" style="left:39%;"><span style="font-size:196px;">R</span>ED</p>
+            <img id="mars" src="images/mars.png" />
+            <p class="planet" style="left:72%;"><span style="font-size:106px;">P</span>LANET</p>
+            <div id="div1">
+                <p><span style="font-size:26px">"</span><i> You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars. </i><span style="font-size:26px">"</span></p>
+                <p style="margin-top: 2%; font-size: 22px;"> - Elon Musk</p>
+            </div>
+            <div id="div2">
+                <p><span style="font-size:46px">M</span>ISSION <span style="font-size:46px">M</span>ARS</p>
+            </div>
+            <div id="div3">
+                    <img src="images/whymars.jpg" id="theimg" />
+                    <p id="up">For thr first time in the history of Earth. We are planning to send humans to Mars. Be a part of this amazing journey with SOI (Space Organization of India).</p>                                   
+                    <ul>
+                        <li id="l1" style="color:#fff" onclick="fun(1)">Why Mars ?</li>
+                        <li id="l2" onclick="fun(2)">Journey to Mars</li>
+                        <li id="l3" onclick="fun(3)">Our achievements</li>
+                        <li id="l4" onclick="fun(4)">Services and requirements</li>
+                    </ul>
+                    <div class="divs" id="d1" style="opacity:1">
+                        <p><h2>Why Mars?</h2>
+
+                                There are several strategic, practical and scientific reasons for humans to explore Mars. Among them we know that Mars is the most accessible place in the solar system. Additionally, exploring Mars provides the opportunity to possibly answer origin and evolution of life questions, and could someday be a destination for survival of humankind.
+                                
+                                In the strategic sense, exploring Mars demonstrates our political and economic leadership as a nation, improves the quality of life on Earth, helps us learn about our home planet, and expands US leadership in the peaceful, international exploration of space.
+                                
+                                From a practical perspective we know that Mars is unique across the entire solar system in that it is a terrestrial planet with an atmosphere and climate, its geology is known to be very diverse and complex (like Earth), and it appears that the climate of Mars has changed over its history (like Earth). 
+                                
+                                Overall, many of the key questions in solar system science can be addressed effectively by exploring Mars. This endeavor also serves to inspire the next generation of explorers and dramatically expand human knowledge.
+                        </p>
+                    </div>
+                    <div class="divs" id="d2">
+                        <p id="down">nnn</p>
+                    </div>
+                    <div class="divs" id="d3">
+                        <p id="down">ddddd</p>
+                    </div>
+                    <div class="divs" id="d4">
+                        <p id="down">kkkk</p>
+                    </div>
+            </div>
+            <div id="caro">
+                <!-- #region Slider Begin -->
+                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:150px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
+                    <div>
+                        <img data-u="image" src="images/001.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/002.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/006.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/007.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/008.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/009.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/010.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/011.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/024.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/025.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/026.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="images/027.jpg" />
+                    </div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                    <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Arrow Navigator -->
+                <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+                    </svg>
+                </div>
+                <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <script type="text/javascript">jssor_1_slider_init();</script>
+            <!-- #endregion Slider End -->
+        </div>
+        <div class="footer">
+            <div class="fcontainer">
+                <a href=""><i class="fa fa-envelope icon" aria-hidden="true"></i></a>
+                <a href=""></a><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
+                <a href=""></a><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
+                <p> Designed by Devashish K Prasad & Aniket A Velhankar</p>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 100);
+            }
+
+            function showPage() {
+            $("#preload").fadeOut(200, "linear");
+            }
+        </script>
+        <div class="foot">
+            <img src="images/foot.jpg"/>
+            <div class="fdiv">
+                <h2>About</h2>
+                <p>
+                    Space Organization of India is the space agency of the Government of India headquartered in the city of Pune. Its vision is to "harness space technology for national development while pursuing space science research and planetary exploration."
+
+                    Formed in 1969, SOI superseded the erstwhile Indian National Committee for Space Research (INCOSPAR) established in 1962 by the efforts of independent India's first Prime Minister, Jawaharlal Nehru, and his close aide and scientist Vikram Sarabhai. The establishment of SOI thus institutionalized space activities in India. It is managed by the Department of Space, which reports to the Prime Minister of India. 
+                </p>
+            </div>
+            <div class="fdiv2">
+                <h2>Office</h2>
+                <p>
+                        <i class="fa fa-map-marker" aria-hidden="true" ></i> <div style="   margin-top: -38px;margin-left:30px;"> PULZION 18, PICT<br> 
+                                                                                Dhankawadi,<br>
+                                                                                Pune.</div><br>
+                        <i class="fa fa-envelope" aria-hidden="true" ></i> <div style="   margin-top: -22px;margin-left:30px;"> devashishkprasad@gmail.com </div><br>
+                        <i class="fa fa-globe" aria-hidden="true" ></i> <div style="   margin-top: -24px;margin-left:30px;"> DevashishPrasad.github.io </div>
+                </p>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="fcontainer">
+                <a href=""><i class="fa fa-envelope icon" aria-hidden="true"></i></a>
+                <a href=""></a><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
+                <a href=""></a><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
+                <p> Designed by Devashish K Prasad & Aniket A Velhankar</p>
+            </div>
+        </div>
+    </body>
+</html>
