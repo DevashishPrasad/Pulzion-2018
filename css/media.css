@@ -1,0 +1,333 @@
+@media (max-width: 800px){
+#logo
+{
+    width: 56%;
+    margin-left: 22%;
+    margin-top: 10px;
+}
+#mars
+{
+    width: 70%;
+    margin-left: 15%;
+    /* margin-top: 70%; */
+
+}
+.planet
+{
+    top: 110%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.red
+{
+    top: 100%;
+    font-size: 60px;
+}
+#r{
+    font-size: 100px;
+}
+.pnt
+{
+    font-size: 45px;
+}
+#preload img
+{
+    width: 60%;
+    margin-top: 5%;
+}
+.menuc
+{
+    width: 20%;
+    height: 17%;
+}
+#fst{
+    left:25%;top:60%;
+}
+#snd{
+    left:25%;top:37%;
+}
+#thrd{
+    right:25%;top:37%;
+}
+#frth{
+    right:25%;top:60%;
+}
+.menuc p
+{
+    margin-top: -80px;
+    color: #000;
+}
+.menuc img
+{
+    opacity: 0.2;
+}
+.menuc
+{
+    opacity: 0.8;
+}
+#up{
+    font-size: 20px;
+}
+#div3 ul{
+    margin-left: 4%;
+    margin-top: 25%;
+}
+#div3 li{
+    font-size: 20px;
+    padding-top: 12%;
+}
+.divs
+{
+    margin-left: 35%; 
+    width: 58%; 
+}
+.fdiv
+{
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 94%;
+    font-size: 15px;
+}
+.fdiv2
+{
+    margin-top: 0%;
+    margin-left: 3%;
+    width: 30%;
+    font-size: 16px;
+}
+.foot
+{
+    top: 360%;
+    height:500px;
+    background: #000;
+}
+.foot img
+{
+    opacity: 0;
+}
+.footer
+{
+    top: 435%;
+}
+}
+
+@media (max-width: 600px){
+#logo
+{
+    width: 66%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+#mars
+{
+    width: 82%;
+    margin-left: 9%;
+    margin-top: 560px;
+
+}
+#fst{
+    left:15%;
+}
+#snd{
+    left:15%;
+}
+#thrd{
+    right:15%;
+}
+#frth{
+    right:15%;
+}
+#up{
+    font-size: 18px;
+    width: 90%;
+    margin-left: 5%;
+}
+#div3 ul{
+    margin-left: -2%;
+    margin-top: 25%;
+}
+#div3 li{
+    font-size: 18px;
+    padding-top: 15%;
+}
+.menuc
+{
+    width: 23%;
+    height: 17%;
+}
+.divs
+{
+    margin-top: 20%; 
+    margin-left: 35%; 
+    width: 62%; 
+    font-size: 15px;
+}
+.fdiv
+{
+    font-size: 14px;
+}
+.fdiv2
+{
+    font-size: 15px;
+}
+.footer
+{
+    font-size: 15px;
+}
+}
+@media (max-width: 450px){
+#preload img
+{
+    width: 90%;
+    margin-top: 5%;
+}
+#logo
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+#mars
+{
+    width: 82%;
+    margin-left: 9%;
+    margin-top: 630px;
+
+}
+#r1
+{
+    top:100%;
+    left:26%;
+}
+#p1
+{
+    top:101%;
+    left:38%;
+}
+#p2
+{
+    top:127%;
+    left:32%;
+}
+.planet
+{
+    /* top: 110%; */
+    font-size: 36px;
+    font-weight: bolder;
+}
+.red
+{
+    /* top: 100%; */
+    font-size: 86px;
+}
+#up{
+    font-size: 18px;
+    width: 90%;
+    margin-left: 5%;
+}
+#div3 ul{
+    margin-top: 32%;
+    background: #000;
+    width: 107%;
+    margin-left: -7%;
+    overflow: hidden;
+}
+#div3 li{
+    display: inline;
+    font-size: 14px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-left: solid thin;
+    border-right: solid thin;
+
+}
+.menuc
+{
+    width: 34%;
+}
+.divs
+{
+    margin-top: 44%; 
+    margin-left: 5%; 
+    width: 90%; 
+    font-size: 14px;
+}
+.fdiv
+{
+    font-size: 14px;
+}
+.fdiv2
+{
+    font-size: 15px;
+}
+.foot
+{
+    top: 360%;
+    height:570px;
+    background: #000;
+}
+.footer
+{
+    top: 448%;
+    font-size: 13px;
+}
+.footer i
+{
+    display: none;
+}
+}
+
+@media (max-width: 380px){
+#fst{
+    left:10%;
+}
+#snd{
+    left:10%;
+}
+#thrd{
+    right:10%;
+}
+#frth{
+    right:10%;
+}
+#mars
+{
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 650px;
+}
+#up{
+    font-size: 15px;
+    width: 90%;
+    margin-left: 5%;
+}
+#div3 ul{
+    margin-top: 32%;
+    width: 110%;
+    margin-left: -10%;
+}
+#div3 li{
+    font-size: 13px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.menuc
+{
+    width: 35%;
+}
+.foot
+{
+    top: 348%;
+    height:600px;
+    background: #000;
+}
+.footer
+{
+    top: 442%;
+    font-size: 12.5px;
+}
+.footer i
+{
+    display: none;
+}
+}
