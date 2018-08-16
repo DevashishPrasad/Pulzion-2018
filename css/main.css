@@ -17,8 +17,8 @@ body
 {
     position: absolute;
     z-index: 99;
-    width: 44%;
-    margin-left: 28%;
+    width: 64%;
+    margin-left: 18%;
     margin-top: 530px;
     animation: mars 180s infinite linear;
 }
