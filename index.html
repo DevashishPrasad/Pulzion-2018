@@ -1,9 +1,15 @@
     <html>
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <!--css-->
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/media.css"/>
         <script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
         <script src="js/js.js" type="text/javascript"></script>
         <script type="text/javascript">
@@ -94,22 +100,22 @@
             <img id="midwall" src="images/mars1.jpg" />
             <img id="logo" src="images/Logo3.png" />
 
-            <div class="menuc" style="left:7%;top:65%;">
+            <div class="menuc" id="fst" style="">
                 <img src="images/marsm.gif" />
                 <p><span style="font-size:26px">M</span>ARS</p>
             </div>
             
-            <div class="menuc" style="left:23%;top:39%;">
+            <div class="menuc" id="snd" style="">
                 <img src="images/rock.gif" />
                 <p><span style="font-size:26px">J</span>OURNEY</p>
             </div>
         
-            <div class="menuc" style="left:63%;top:39%;">
+            <div class="menuc" id="thrd" style="">
                 <img src="images/award.gif" />
                 <p><span style="font-size:26px">A</span>CHIEVEMENTS</p>
             </div>
 
-            <div class="menuc" style="left:80%;top:65%;">
+            <div class="menuc" id="frth" style="">
                 <img src="images/services.gif" />
                 <p><span style="font-size:26px">S</span>ERVICES</p>
             </div>
@@ -217,10 +223,10 @@
                 <circle class="big" cx="1225.25" cy="371.25" fill="#fcf4f4" id="svg_93" r="2" stroke="#230000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
             </g>
             </svg>
-            <p class="planet" style="left:16%;"><span style="font-size:106px;">T</span>HE</p>
-            <p class="red" style="left:39%;"><span style="font-size:196px;">R</span>ED</p>
+            <p class="planet" id="p1" style=""><span  class="pnt" style="">T</span>HE</p>
+            <p class="red" id="r1" style=""><span id="r" style="">R</span>ED</p>
             <img id="mars" src="images/mars.png" />
-            <p class="planet" style="left:72%;"><span style="font-size:106px;">P</span>LANET</p>
+            <p class="planet" id="p2" style=""><span class="pnt" style="">P</span>LANET</p>
             <div id="div1">
                 <p><span style="font-size:26px">"</span><i> You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars. </i><span style="font-size:26px">"</span></p>
                 <p style="margin-top: 2%; font-size: 22px;"> - Elon Musk</p>
@@ -234,8 +240,8 @@
                     <ul>
                         <li id="l1" style="color:#fff" onclick="fun(1)">Why Mars ?</li>
                         <li id="l2" onclick="fun(2)">Journey to Mars</li>
-                        <li id="l3" onclick="fun(3)">Our achievements</li>
-                        <li id="l4" onclick="fun(4)">Services and requirements</li>
+                        <li id="l3" onclick="fun(3)">Achievements</li>
+                        <li id="l4" onclick="fun(4)">Services</li>
                     </ul>
                     <div class="divs" id="d1" style="opacity:1">
                         <p><h2>Why Mars?</h2>
@@ -245,8 +251,7 @@
                                 In the strategic sense, exploring Mars demonstrates our political and economic leadership as a nation, improves the quality of life on Earth, helps us learn about our home planet, and expands US leadership in the peaceful, international exploration of space.
                                 
                                 From a practical perspective we know that Mars is unique across the entire solar system in that it is a terrestrial planet with an atmosphere and climate, its geology is known to be very diverse and complex (like Earth), and it appears that the climate of Mars has changed over its history (like Earth). 
-                                
-                                Overall, many of the key questions in solar system science can be addressed effectively by exploring Mars. This endeavor also serves to inspire the next generation of explorers and dramatically expand human knowledge.
+                        
                         </p>
                     </div>
                     <div class="divs" id="d2">
@@ -327,14 +332,6 @@
             </div>
             <script type="text/javascript">jssor_1_slider_init();</script>
             <!-- #endregion Slider End -->
-        </div>
-        <div class="footer">
-            <div class="fcontainer">
-                <a href=""><i class="fa fa-envelope icon" aria-hidden="true"></i></a>
-                <a href=""></a><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
-                <a href=""></a><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
-                <p> Designed by Devashish K Prasad & Aniket A Velhankar</p>
-            </div>
         </div>
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
