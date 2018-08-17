@@ -645,7 +645,17 @@ nav a:hover
 		left: 0;
 	}
 }
-
+@media (max-width: 600px)
+{
+.foot
+{
+	display:none;
+}
+.footer
+{
+	display:none;
+}
+}
 @media (max-width: 480px)
 {
 	#category
