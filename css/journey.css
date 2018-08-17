@@ -1,0 +1,289 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: open sans;
+    background: url(../images/journeywall.jpg);
+    background-size: 100%;
+}
+#logo
+{
+    position: absolute;
+    z-index: 99;
+    width: 25%;
+    margin-left: 15%;
+    filter: brightness(98%)
+}
+.ttl
+{
+    position: absolute;
+    top:420px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.ttl h1
+{
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    color: #ffffff;
+}
+header nav ul
+{
+	float: right;
+	margin-top: 100px;
+	margin-right: 300px;
+	font-size: 25px;
+} 
+
+nav .active
+{
+	text-decoration: underline;
+	color: #f49f27;
+}
+nav li
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 25px;
+}
+
+nav a 
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #f49f27;
+	text-decoration: underline;
+	transition: all 0.3s ease-in;
+}
+
+#div2
+{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 150px;
+    background: #282828;
+    text-align: center;
+}
+#div2 p
+{
+    margin-top: 50px;
+    font-size: 36px; 
+    color: #fff;
+}
+.you
+{
+    width: 100%;
+    height:600px;
+    position: absolute;
+    top: 122%;
+}
+#div3
+{
+    position: absolute;
+    width: 100%;
+    background: #0564ac;
+    top: 212%;
+    height: 800px;
+}
+#div3 h1
+{
+    text-align: left;
+    margin-left: 35%;
+    color: #ffffff;
+    position: absolute;
+    z-index: 10;
+}
+.vehi
+{
+    width: 40%;
+    opacity: 0.28;
+    position: absolute;
+    z-index: 0;
+    top:0;
+}
+#div3 p
+{
+    font-size: 19px;
+    top: 12%;
+    width: 60%;
+    margin-left: 35%;
+    position: absolute;
+    z-index: 10;
+    color:#ffffff;
+}
+.cont img
+{
+    float: left;
+    width: 28%;
+    margin-left: 2%;
+}
+.cont
+{
+    position: absolute;
+    top:50%;
+    left: 34%;
+    text-align: center
+}
+.cont2
+{
+    position: absolute;
+    top:75%;
+    left: 35.1%;
+}
+.cont2 text
+{
+    color: #ffffff;
+    font-size: 20px;
+}
+.parts
+{
+    top:40%;
+}
+#t1
+{
+    margin-left: 88px;
+}
+#t2
+{
+    margin-left: 112px;
+}
+#banner
+{
+    top:330%;
+    width:100%; 
+    position:absolute; 
+    z-index:5;
+    background:#fff;  
+}
+#Slide
+{
+    width: 100%;
+    height: 740px;
+}
+.arrow
+{
+    transition:all 0.5s ease; 
+    position:absolute; 
+    top:400px; 
+    height: 80px; 
+    width: 80px;
+}
+#banner p
+{
+    top:30%;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+}
+.arrow:hover 
+{
+    transform: scale(1.2)
+}
+#a1
+{
+    right: 5%;
+}
+#a2
+{
+    left: 5%;
+}
+#Slide
+{
+	opacity: 1;
+	filter: (opacity=100);
+	transition: all 1s ;
+}
+
+#Slide.sle
+{
+	opacity: 0;
+	filter: (opacity=0);
+}
+.foot
+{
+    position: absolute;
+    top: 440%;
+    height:280px;
+    width: 100%;
+    /* background: url(../); */
+    /* background-size: 100% 100%; */
+    color: #fff;
+    font-size: 15px;
+}
+.foot img
+{
+    position: absolute;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+}
+.foot i
+{
+    color: #ccc;
+}
+.footer
+{
+    position: absolute;
+    top: 475%;
+    text-align: center;
+    background: #4f4e4e;
+    width: 100%;
+    height: 50px;
+}
+.footer p
+{
+    margin-top: 12px;
+    float: left;
+    color: #fff
+}
+.icon
+{
+    margin-top: 10px; 
+    float: right;
+    font-size: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: #ccc;
+}
+.icon:hover
+{
+    color:#fff;
+}
+.foot h2
+{
+    color: #ccc;
+}
+.fcontainer
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+.fdiv
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 50%;
+    float: left;
+}
+.fdiv2
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 30%;
+    float: left;
+}
