@@ -278,56 +278,81 @@
 }
 
 @media (max-width: 380px){
-#fst{
-    left:10%;
-}
-#snd{
-    left:10%;
-}
-#thrd{
-    right:10%;
-}
-#frth{
-    right:10%;
-}
 #mars
 {
     width: 84%;
     margin-left: 8%;
-    margin-top: 650px;
-}
-#up{
-    font-size: 15px;
-    width: 90%;
-    margin-left: 5%;
+    margin-top: 640px;
 }
 #div3 ul{
-    margin-top: 32%;
     width: 110%;
     margin-left: -10%;
 }
 #div3 li{
-    font-size: 13px;
-    padding-right: 4px;
-    padding-left: 4px;
+    font-size: 12.5px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
-.menuc
+}
+@media (max-height: 600px){
+#mars
 {
-    width: 35%;
+    margin-top: 600px;
+}
+#div1 p
+{
+    font-size: 16px;
+}
+#up{
+    margin-top: 1%;
+    font-size: 16px;
+    width: 96%;
+    margin-left: 2%;
+}
+.divs
+{
+    margin-top: 40%; 
+    margin-left: 3%; 
+    width: 94%; 
+    font-size: 13.5px;
 }
 .foot
 {
-    top: 348%;
-    height:600px;
-    background: #000;
+    height: 640px;
 }
 .footer
 {
-    top: 442%;
-    font-size: 12.5px;
+    top: 468%;
+    font-size: 12px;
 }
-.footer i
+}
+@media (max-height: 600px) and (max-width: 1800px){
+#mars
 {
-    display: none;
+    margin-top: 400px;
+}
+}
+@media (max-height: 600px) and (max-width: 1200px){
+#mars
+{
+    margin-top: 450px;
+}
+}
+@media (max-height: 600px) and (max-width: 800px){
+#mars
+{
+    margin-top: 380px;
+}
+}
+@media (max-height: 600px) and (max-width: 600px){
+#mars
+{
+    margin-top: 450px;
+}
+}
+@media (max-height: 600px) and (max-width: 800px){
+#mars
+{
+    margin-top: 490px;
 }
 }
