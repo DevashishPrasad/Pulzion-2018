@@ -782,9 +782,7 @@ nav a:hover
 	}
 	.foot
 	{
-		top: 1050%;
-		height:500px;
-		background: #000;
+		display:none;
 	}
 	.foot img
 	{
@@ -792,7 +790,7 @@ nav a:hover
 	}
 	.footer
 	{
-		top: 1125%;
+		display:none;
 	}
 
 
