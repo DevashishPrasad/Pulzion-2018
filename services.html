@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="service_css.css">
+ <!-- icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ #preload
+{
+    position: fixed;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    transition: all 1s;
+}
+#preload img
+{
+    width: 40%
+    /* margin-left: 25%: */
+}
+ </style>
+</head>
+<body onload="myFunction()">
+    <div id="preload">
+        <br>
+        <br>
+        <br>
+        <img src="images/rl.gif" />
+        <h1>LOADING...</h1>
+    </div>
+    <header>    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marsdesc.html">Mars</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="achieve.html">Achievements</a></li>
+                    <li class="active"><a href="#">Services</a></li>
+                </ul>
+            </nav>
+    </header>
+  <div class="container">
+
+
+    <img src="images/services/launch.jpeg">
+
+    <div id="overlap" style="border:none;">
+      <p>
+      Creating Memories for the Connected Traveler<br/><br/>
+      <span style="color:rgb(83, 82, 82);">Today's connected travelers are empowered and they view the travel experience holistically. They demand high quality digital and mobile experiences, competitive pricing across the value chain and expect to be recognized and responded to in real time according to their preferences or concerns.</span>
+      </p>
+    </div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="images/services/cabin.jpg" style="width:100%">
+        <div class="text">Lavish Cabins</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/services/service.jpg" style="width:100%">
+        <div class="text">Best in class service</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/services/food.jpg" style="width:100%">
+        <div class="text">Five star restaurant availability</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/services/hotelrooms.jpg" style="width:100%">
+        <div class="text">Spacious rooms</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/services/cabin2.jpg" style="width:100%">
+        <div class="text">Luxurious travel experience</div>
+      </div>
+
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+<br>
+
+    <div style="text-align:center; width: 70%;">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+  <form action="/action_page.php" id="formreg">
+    <div id="subscribe">
+      <h1>Register to know more...</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+$("#preload").fadeOut(200, "linear");
+}
+</script>
+</body>
+</html> 

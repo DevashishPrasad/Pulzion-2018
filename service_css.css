@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {box-sizing: border-box}
+
+body 
+{
+  font-family: Open Sans; 
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  background-color: #eebe44;
+}
+header nav ul
+{
+	float: right;
+	margin-top: 15px;
+	margin-right: 300px;
+	font-size: 25px;
+} 
+
+nav .active
+{
+	text-decoration: underline;
+	color: #f49f27;
+}
+nav li
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 25px;
+}
+
+nav a 
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #f49f27;
+	text-decoration: underline;
+	transition: all 0.3s ease-in;
+}
+.container
+{
+  margin:auto;
+}
+
+.container img
+{
+  object-fit: fill;
+  height:620px;
+  width:100%;
+}
+
+#overlap
+{
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px outset;
+  width:50%;
+  height:300px;
+  top:0;
+  left:0;
+  margin-left: 50px;
+  margin-top: 150px;
+  position: absolute;
+}
+
+#overlap p
+{
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: bold;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.mySlides {display: none; width: 100%;}
+
+/* Slideshow container */
+.slideshow-container {
+ width: 70%;
+ height: 30%;
+ margin:10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 640px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left:900px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 70%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+#formreg
+{
+  border:1px solid #000000; 
+  width:25%; height: 100%; float: right; 
+  margin-right: 10px; 
+  margin-top: -675px;
+}
+
+#subscribe
+{
+  padding:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media (max-width: 1330px)
+{
+ .next 
+ {
+  margin-left:800px;
+  border-radius: 3px 0 0 3px;
+ } 
+
+}
+
+@media (max-width: 900px)
+{
+    .slideshow-container 
+    {
+      width: 90%;
+      height: 30%;
+      margin:5%;
+    }
+
+    .next 
+    {
+      margin-left:750px;
+      border-radius: 3px 0 0 3px;
+    } 
+
+    #formreg
+    {
+      border:1px solid #000000; 
+      width:50%; 
+      height: 100%; 
+      float: none; 
+      margin-left: 10px; 
+      margin-top: 25px;
+    }
+
+    #subscribe
+    {
+      padding:16px;
+    }  
+}
+
+@media (max-width: 858px)
+{
+   #overlap
+  {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px outset;
+    width:50%;
+    height:350px;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 150px;
+    position: absolute;
+  }
+
+  #overlap p
+  {
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: bold;
+  } 
+}
+
+@media (max-width: 670px)
+{
+   #overlap
+  {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px outset;
+    width:50%;
+    height:300px;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 150px;
+    position: absolute;
+  }
+  #overlap p
+  {
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: bold;
+  }  
+}
+
+@media (max-width: 522px)
+{
+   #overlap
+  {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px outset;
+    width:50%;
+    height:300px;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 150px;
+    position: absolute;
+  }
+  #overlap p
+  {
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: bold;
+  }  
+}
+
+@media (max-width: 436px)
+{
+   #overlap
+  {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px outset;
+    width:50%;
+    height:300px;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 150px;
+    position: absolute;
+  }
+  #overlap p
+  {
+    font-size: 16px;
+    line-height: 0.8em;
+    font-weight: bold;
+  }  
+}
+
+@media (max-width: 350px)
+{
+   #overlap
+  {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px outset;
+    width:50%;
+    height:300px;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 150px;
+    position: absolute;
+  }
+  #overlap p
+  {
+    font-size: 14px;
+    line-height: 0.8em;
+    font-weight: bold;
+  }  
+}
+
+@media (max-width: 300px)
+{
+   #overlap
+  {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px outset;
+    width:50%;
+    height:350px;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 150px;
+    position: absolute;
+  }
+  #overlap p
+  {
+    font-size: 14px;
+    line-height: 0.8em;
+    font-weight: bold;
+  }  
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

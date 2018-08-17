@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mars</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"> -->
+	<script type="text/javascript">
+		function scrollwin(p)
+		{
+			var id=p;
+
+			if(id=='surf')
+			{
+				window.scrollBy({left:0,top:620,behavior:'smooth'});
+			}
+			else if(id=='miss')
+				window.scrollBy({left:0,top:1310,behavior:'smooth'});
+			else if(id=='atmo')
+				window.scrollBy({left:0,top:2200,behavior:'smooth'});
+		}
+	</script>
+	 <!-- icons -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <style>
+			#preload
+		   {
+			   position: fixed;
+			   z-index: 999999999;
+			   width: 100%;
+			   height: 100%;
+			   background: #fff;
+			   text-align: center;
+			   transition: all 1s;
+		   }
+		   #preload img
+		   {
+			   width: 40%
+			   /* margin-left: 25%: */
+		   }
+	</style>
+</head>
+<body onload="myFunction()">
+	<div id="preload">
+		<br>
+		<br>
+		<br>
+		<img src="images/rl.gif" />
+		<h1>LOADING...</h1>
+	</div>
+	<!--nav bar -->
+		<header>
+			<nav>
+				<ul>
+					<li class="active"><a href="#">Mars</a></li>
+					<li><a href="journey.html">Journey</a></li>
+					<li><a href="achieve.html">Achievements</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	<!--nav bar ends-->
+	<!--Code for the categories section consisiting of three categories-->
+	<section id="category">
+		<div class="container">
+
+			<h2>MARS</h2>
+
+					<a id="logo" href="index.html"><img src="images/Logo3.png"></a>
+
+				<div id="surfaces" class="hovereffect">
+					<img src="images/surface.jpg">
+					<div class="overlay">
+						<h4>Surface</h4>
+						<a class="info" onclick="scrollwin('surf')">Click to explore</a>
+	  				</div>
+				</div>
+			
+				<div id="missions" class="hovereffect">
+					<img src="images/rover.jpg">
+					<div class="overlay">
+						<h4>Missions</h4>
+						<a class="info" onclick="scrollwin('miss')">Click to explore</a>
+	  				</div>
+				</div>
+
+				<div id="atmosphere" class="hovereffect">
+					<img src="images/atmosphere.jpg">
+					<div class="overlay">
+						<h4>Atmosphere</h4>
+						<a class="info" onclick="scrollwin('atmo')">Click to explore</a>
+	  				</div>
+				</div>
+
+		</div>
+	</section>
+
+		<!---Categories section ends here-->
+
+	<section>
+		<div class="container">
+
+			<h3>Surface : The shade of red</h3>
+
+			<div class="hvrbox">
+				<img src="images/surface/rock.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Rocks</h2>
+							Filing up on the rock after drilling, showing the rock was not firmly in place. Because of the loose rock, the drill hole was not completed.Vibrations from the drilling cleaned off some of the rock veins, revealing a lighter color. The tailings from the incomplete drill hole are actually a gray-green color.This image was taken by the rover's Mast Camera (Mastcam)
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+				<img src="images/surface/mountsharp.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Mount Sharp</h2>
+							Mount Sharp stands about 3 miles (5 kilometers) high in the middle of Gale Crater, which spans 96 miles (154 kilometers) in diameter. Vera Rubin Ridge is on the northwestern flank of lower Mount Sharp. The foreground of this panorama shows portions of lower Mount Sharp. The middle distance shows the floor of Gale Crater. Most of the horizon is formed by the crater's rim. 
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+				<img src="images/surface/lakebed.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Lakebed</h2>
+							"Hidden Valley," seen from the valley floor.Thick-laminated, evenly-stratified rock type that forms stratigraphically beneath cross-bedded sandstones regarded as ancient river deposits. These rocks are interpreted to record sedimentation in a lake, as part of or in front of a delta, where plumes of river sediment settled out of the water column and onto the lake floor.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+				<img src="images/surface/curiosityclay.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Curiosity Clay</h2>
+							Mount Sharp stands in the middle of Gale Crater, which is 96 miles (154 kilometers) in diameter. This mound, which Curiosity has been climbing since 2014, likely formed in the presence of water at various points of time in Mars ancient history. That makes it an ideal place to study how water influenced the habitability of Mars billions of years ago.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+				<img src="images/surface/verarubinridge.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Vera Rubin Ridge</h2>
+							"Vera Rubin Ridge" on lower Mount Sharp, in an area where reconnaissance imaging with science filters revealed variability in indications of the mineral hematite. Removing dust from part of the Christmas Cove target was part of an experiment to check whether dust is subduing the apparent indications of hematite in some of the area's bedrock. The brushed area's purplish tint is characteristic of fine-grained hematite.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+				<img src="images/surface/cratertadpoles.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Crater Tadpoles</h2>
+							This image from NASA's Mars Reconnaissance Orbiter (MRO) shows an impact crater looking amusingly like a tadpole because of the valley that was carved by water that used to fill it.It is often difficult to differentiate between inlet and outlet channels, but water always flows downhill. In this particular case, we can infer that water is flowing outward because we have the necessary terrain-height information.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h3>Missions : Explore the unknown</h3>
+
+			<div class="hvrbox">
+			<img src="images/mission/ESA.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">ESA</h2>
+						This first mission of ESA's ExoMars program consists of a Trace Gas Orbiter plus an Entry, descent and landing Demonstrator Module, known as Schiaparelli (which transmitted data during its descent before crash landing on the martian surface). The main objectives of this mission are to search for evidence of methane and other trace atmospheric gases..
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/maven1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Maven</h2>
+						MAVEN, which stands for Mars Atmosphere and Volatile Evolution mission, has provided first-of-its-kind measurements to address key questions about Mars climate and habitability and improve understanding of dynamic processes in the upper Martian atmosphere and ionosphere.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/odeyssey.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Odyssey</h2>
+						Mars Odyssey is capturing images of the Martian surface at resolutions between those of Viking and Mars Global Surveyor, and is making both daytime and nighttime observations of the surface in thermal infrared wavelengths at resolutions higher than ever before. It has detected massive deposits of water lying below Mars’ surface.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/marsreccon.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Beagle</h2>
+						Beagle 2 may have landed too hard, the victim of an unexpectedly thin atmosphere at the time of its arrival.
+						Mars Express successfully entered orbit on December 26 and immediately began returning stunning, 3D, color images. Mars Express has detected surprising concentrations of methane and evidence for recent volcanism on Mars. Its radar sounder, MARSIS, was deployed late in the mission due to spacecraft safety concerns.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/mangalyaan.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Mangalyaan</h2>
+						Sometimes referred to by the nickname "Mangalyaan," the Mars Orbiter Mission is India's first interplanetary spacecraft. It is primarily a technology demonstration mission that carries a small, 15-kilogram payload of 5 science instruments. It entered orbit at Mars in September 2014, just two days after the arrival of NASA's MAVEN mission. The orbit is highly elliptical, from 387 to 80,000 kilometers.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/rover.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Curiosity rover</h2>
+						Curiosity is the next generation of rover, building on the successes of Spirit and Opportunity. It landed in Gale Crater, the location of a 5+ km tall mound of layered sedimentary material, which Curiosity has found was at least partially deposited in a lake setting. The rover has also made key discoveries such as the detection of organic material. 
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/marsexpress.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Mars Express</h2>
+						Mars Express, a lander designed to perform exobiology and geochemistry research. The orbiter has been successfully performing scientific measurements since early 2004, namely, high-resolution imaging and mineralogical mapping of the surface, radar sounding of the subsurface structure down to the permafrost, precise determination of the atmospheric circulation.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/exomars2020.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Future : Exomars 2020</h2>
+						ESA's ExoMars 2020 mission will deliver a European rover and a Russian surface platform to the surface of Mars. A Proton rocket will be used to launch the mission, which will arrive to Mars after a nine-month journey. The ExoMars rover will travel across the Martian surface to search for signs of life.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/mission/insight.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Future : Insight</h2>
+						InSight (Interior Exploration using Seismic Investigations, Geodesy and Heat Transport) is a Mars lander full of geophysical instruments. Using a seismometer, heat flow probe, and precision tracking it seeks to explore the deep interior of Mars and improve our understanding of the formation of terrestrial planets.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h3>Atmosphere : Whats above the sky</h3>
+
+			<div class="hvrbox">
+			<img src="images/atmos/sunset.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Sunset</h2>
+						 in the Martian atmosphere has fine particles that permit blue light to penetrate the atmosphere more efficiently than longer-wavelength colors. That causes the blue colors in the mixed light coming from the sun to stay closer to sun's part of the sky, compared to the wider scattering of yellow and red colors. The effect is most pronounced near sunset, when light from the sun passes through a longer path in the atmosphere than it does at mid-day.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/atmos/red.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Red planet</h2>
+							The atmosphere of Mars is less than 1% of Earth’s, so it does not protect the planet from the Sun’s radiation nor does it do much to retain heat at the surface. It consists of 95% carbon dioxide, 3% nitrogen, 1.6% argon, and the remainder is trace amounts of oxygen, water vapor, and other gases. Also, it is constantly filled with small particles of dust(mainly iron oxide), which give Mars its reddish hue.
+					</div>
+				</div>
+			</div>
+
+			<div class="hvrbox">
+			<img src="images/atmos/clouds.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text" style="font-size:15px;">
+						<h2 class="hvrbox-title">Clouds</h2>
+							As water ice clouds cover the sky, the sky takes on a more bluish cast. This is because small particles (perhaps a tenth the size of the Martian dust, or one-thousandth the thickness of a human hair) are bright in blue light, but almost invisible in red light. Thus, scientists expect that the ice particles in the clouds are very small. The clouds were imaged by the Imager for Mars Pathfinder (IMP).
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="foot">
+		<img src="images/foot.jpg"/>
+		<div class="fdiv">
+			<h2>About</h2>
+			<p>
+				Space Organization of India is the space agency of the Government of India headquartered in the city of Pune. Its vision is to "harness space technology for national development while pursuing space science research and planetary exploration."
+
+				Formed in 1969, SOI superseded the erstwhile Indian National Committee for Space Research (INCOSPAR) established in 1962 by the efforts of independent India's first Prime Minister, Jawaharlal Nehru, and his close aide and scientist Vikram Sarabhai. The establishment of SOI thus institutionalized space activities in India. It is managed by the Department of Space, which reports to the Prime Minister of India. 
+			</p>
+		</div>
+		<div class="fdiv2">
+			<h2>Office</h2>
+			<p>
+					<i class="fa fa-map-marker" aria-hidden="true" ></i> <div style="   margin-top: -38px;margin-left:30px;"> PULZION 18, PICT<br> 
+																			Dhankawadi,<br>
+																			Pune.</div><br>
+					<i class="fa fa-envelope" aria-hidden="true" ></i> <div style="   margin-top: -22px;margin-left:30px;"> devashishkprasad@gmail.com </div><br>
+			</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="fcontainer">
+			<a href=""><i class="fa fa-envelope icon" aria-hidden="true"></i></a>
+			<a href=""></a><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
+			<a href=""></a><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
+			<p> Designed by Devashish K Prasad & Aniket A Velhankar</p>
+		</div>
+	</div>
+
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script>
+	var myVar;
+
+	function myFunction() {
+		myVar = setTimeout(showPage, 1000);
+	}
+
+	function showPage() {
+	$("#preload").fadeOut(200, "linear");
+	}
+</script>
+</body>
+
+</html>

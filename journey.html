@@ -1,0 +1,175 @@
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/journey.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jourmedia.css"/>
+    <!-- scripts -->
+    <style>
+            #preload
+           {
+               position: fixed;
+               z-index: 999999999;
+               width: 100%;
+               height: 100%;
+               background: #fff;
+               text-align: center;
+               transition: all 1s;
+           }
+           #preload img
+           {
+               width: 40%
+               /* margin-left: 25%: */
+           }
+    </style>
+</head>
+<body onload="function1();myFunction()">
+    <div id="preload">
+        <br>
+        <br>
+        <br>
+        <img src="images/rl.gif" />
+        <h1>LOADING...</h1>
+    </div>
+    <a href="index.html"><img id="logo" src="images/Logo3.png" /></a>
+    <header>    
+            <nav>
+                <ul>
+                    <li></li>
+                    <li><a href="marsdesc.html">Mars</a></li>
+                    <li class="active"><a href="#">Journey</a></li>
+                    <li><a href="achieve.html">Achievements</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="ttl">
+        <h1>JOURNEY TO MARS</h1>
+    </div>
+    <div id="div2">
+        <p>Journey Of Rover</p>
+    </div>
+    <iframe class="you" src="https://www.youtube.com/embed/XRCIzZHpFtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div id="div3">
+        <br>
+        <br>
+            <h1>Vehicle</h1>
+            <img src="Others/journey.gif" class="vehi"/>
+            <p>
+                    On September 29th, 2017, SOI CEO and Lead Designer presented an updated vehicle design. A key challenge with the original vehicle design was figuring out how to pay for it. The updated design solves this problem by leveraging a slightly smaller vehicle that can service all greater Earth orbit needs as well as the Moon and Mars. This single system—one booster and one ship—will eventually replace previous vehicle.  By creating a single system that can service a variety of markets, SOI can redirect resources from vehicle system—which is fundamental in making the vehicle affordable. 
+            </p>
+            <br>
+            <h1 class="parts" style="">There are 3 parts of the journey</h1>
+            <div class="cont">
+                <img src="images/1st.jpg"/>
+                <img src="images/spacetravel.png"/>
+                <img src="images/landing.jpg"/>
+            </div>
+            <div class="cont2">
+                <text>Launching from Earth</text>
+                <text id="t1">Travelling in space</text>
+                <text id="t2">Landing on mars</text>
+            </div>
+    </div>
+    <!--banner-->
+	<script>
+        var Current=-1;
+        var len;
+        var myarray;
+        
+        function function1()
+        {
+            myarray = new Array("images/1st.jpg","images/spacetravel.png","images/landing.jpg");
+            parr = new Array("The Vehicle designed by SOI can lift 200 people in the outerspace. It has been successfully tested with the failure precentage of 0.001%."," Once the spacecraft is in outer space, it will find launch window through which it reach to Mars in about 90 days.", "The space craft will enter the atmosphere of mars and find out the SOI base. Then it will land on mars with sheer ease.")
+            len=myarray.length;
+            if (document.images) 
+            {
+                Current++;
+                if (Current == 3) 
+                Current = 0;
+            }
+            document.getElementById("Slide").className+="sle";
+            setTimeout(function(){
+                document.getElementById("Slide").src= myarray[Current];
+                document.getElementById("thep").innerHTML = parr[Current];
+                document.getElementById("Slide").className="";
+            },1000);
+            setTimeout("function1()",10000);
+        }
+        function Display1(val)
+        {
+            myarray = new Array("images/1st.jpg","images/spacetravel.png","images/landing.jpg");
+            parr = new Array("The Vehicle designed by SOI can lift 200 people in the outerspace at once. It has been successfully tested with the failure precentage of 0.001%."," Once the spacecraft is in outer space, it will find launch window through which it will reach Mars in about 90 earth days.", "The space craft will enter the atmosphere of mars and find out the SOI mars base. Then it will land on mars with sheer ease.")
+            Current+=val;
+            if (Current<0) 
+            {
+                Current=2;
+            }
+            else if(Current>2)
+            {
+                Current=0;
+            }
+            document.getElementById("Slide").src= myarray[Current];
+            document.getElementById("thep").innerHTML = parr[Current];
+        }
+        </script>
+        <div id="banner">
+            <img src=" "id="Slide">
+            <img class="arrow" src="images/right.png" onclick="Display1(1)" id='a1'/>
+            <p id="thep">lsladlkadsjlsakjaklsjsaldjlkadsj</p>
+            <img class="arrow" src="images/left.png" onclick="Display1(-1)" id='a2'/>	
+        </div>
+    <!--banner ends-->
+    <div class="foot">
+        <img src="images/foot.jpg"/>
+        <div class="fdiv">
+            <h2>About</h2>
+            <p>
+                Space Organization of India is the space agency of the Government of India headquartered in the city of Pune. Its vision is to "harness space technology for national development while pursuing space science research and planetary exploration."
+
+                Formed in 1969, SOI superseded the erstwhile Indian National Committee for Space Research (INCOSPAR) established in 1962 by the efforts of independent India's first Prime Minister, Jawaharlal Nehru, and his close aide and scientist Vikram Sarabhai. The establishment of SOI thus institutionalized space activities in India. It is managed by the Department of Space, which reports to the Prime Minister of India. 
+            </p>
+        </div>
+        <div class="fdiv2">
+            <h2>Office</h2>
+            <p>
+                    <i class="fa fa-map-marker" aria-hidden="true" ></i> <div style="   margin-top: -38px;margin-left:30px;"> PULZION 18, PICT<br> 
+                                                                            Dhankawadi,<br>
+                                                                            Pune.</div><br>
+                    <i class="fa fa-envelope" aria-hidden="true" ></i> <div style="   margin-top: -22px;margin-left:30px;"> devashishkprasad@gmail.com </div><br>
+                    <i class="fa fa-globe" aria-hidden="true" ></i> <div style="   margin-top: -24px;margin-left:30px;"> DevashishPrasad.github.io </div>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="fcontainer">
+            <a href=""><i class="fa fa-envelope icon" aria-hidden="true"></i></a>
+            <a href=""></a><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
+            <a href=""></a><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
+            <p> Designed by Devashish K Prasad & Aniket A Velhankar</p>
+        </div>
+    </div>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+$("#preload").fadeOut(200, "linear");
+}
+</script>
+</body>
+</html>
